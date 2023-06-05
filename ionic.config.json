@@ -1,0 +1,8 @@
+{
+  "name": "abb-asuransiku-pro",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "37f59ebd"
+}
