@@ -1,0 +1,303 @@
+{
+    "/API_STAGE_1/v02/login/login": {
+        "target": "http://dev.asuransiku.id/API_STAGE_1/v02/login/login",
+        "secure": false
+    },
+    "/API_STAGE_1/v02/dashboard/dashboard": {
+        "target": "http://dev.asuransiku.id/API_STAGE_1/v02/dashboard/dashboard",
+        "secure": false
+    },
+    "/API_STAGE_1/v02/cart/cart": {
+        "target": "http://dev.asuransiku.id/API_STAGE_1/v02/cart/cart",
+        "secure": false
+    },
+    "/API_STAGE_1/v02/policy/policy": {
+        "target": "http://dev.asuransiku.id/API_STAGE_1/v02/policy/policy",
+        "secure": false
+    },
+    "/API_STAGE_1/v02/claim/add_claim/showDataPolicy": {
+        "target": "http://dev.asuransiku.id/API_STAGE_1/v02/claim/add_claim/showDataPolicy",
+        "secure": false
+    },
+    "/API_STAGE_1/v02/claim/add_claim": {
+        "target": "http://dev.asuransiku.id/API_STAGE_1/v02/claim/add_claim",
+        "secure": false
+    },
+    "/API_STAGE_1/v02/claim/claim": {
+        "target": "http://dev.asuransiku.id/API_STAGE_1/v02/claim/claim",
+        "secure": false
+    },
+    "/API_STAGE_1/v02/income/income": {
+        "target": "http://dev.asuransiku.id/API_STAGE_1/v02/income/income",
+        "secure": false
+    },
+    "/API_STAGE_1/v02/income/redeem/doRedeem": {
+        "target": "http://dev.asuransiku.id/API_STAGE_1/v02/income/redeem/doRedeem",
+        "secure": false
+    },
+    "/API_STAGE_1/v02/income/redeem": {
+        "target": "http://dev.asuransiku.id/API_STAGE_1/v02/income/redeem",
+        "secure": false
+    },
+    "/API_STAGE_1/v02/downline/downline/rewardLevelOne": {
+        "target": "http://dev.asuransiku.id/API_STAGE_1/v02/downline/downline/rewardLevelOne",
+        "secure": false
+    },
+    "/API_STAGE_1/v02/downline/downline/rewardLevelTwo": {
+        "target": "http://dev.asuransiku.id/API_STAGE_1/v02/downline/downline/rewardLevelTwo",
+        "secure": false
+    },
+    "/API_STAGE_1/v02/downline/downline": {
+        "target": "http://dev.asuransiku.id/API_STAGE_1/v02/downline/downline",
+        "secure": false
+    },
+    "/API_STAGE_1/v02/downline/reward/redeem": {
+        "target": "http://dev.asuransiku.id/API_STAGE_1/v02/downline/reward/redeem",
+        "secure": false
+    },
+    "/API_STAGE_1/v02/downline/reward": {
+        "target": "http://dev.asuransiku.id/API_STAGE_1/v02/downline/reward",
+        "secure": false
+    },
+    "/API_STAGE_1/v02/account/account/getDataProfile": {
+        "target": "http://dev.asuransiku.id/API_STAGE_1/v02/account/account/getDataProfile",
+        "secure": false
+    },
+    "/API_STAGE_1/v02/account/account/getDataAccountBank": {
+        "target": "http://dev.asuransiku.id/API_STAGE_1/v02/account/account/getDataAccountBank",
+        "secure": false
+    },
+    "/API_STAGE_1/v02/account/account/doModifyDataAccountBank": {
+        "target": "http://dev.asuransiku.id/API_STAGE_1/v02/account/account/doModifyDataAccountBank",
+        "secure": false
+    },
+    "/API_STAGE_1/v02/account/account/doModifyDataPassword": {
+        "target": "http://dev.asuransiku.id/API_STAGE_1/v02/account/account/doModifyDataPassword",
+        "secure": false
+    },
+    "/API_STAGE_1/v02/account/account/doModifyData": {
+        "target": "http://dev.asuransiku.id/API_STAGE_1/v02/account/account/doModifyData",
+        "secure": false
+    },
+    "/API_STAGE_1/v02/member/member": {
+        "target": "http://dev.asuransiku.id/API_STAGE_1/v02/member/member",
+        "secure": false
+    },
+    "/API_STAGE_1/v02/register/register/doRegisterUpdate": {
+        "target": "http://dev.asuransiku.id/API_STAGE_1/v02/register/register/doRegisterUpdate",
+        "secure": false
+    },
+    "/API_STAGE_1/v02/register/register/retrieveDataRegistration": {
+        "target": "http://dev.asuransiku.id/API_STAGE_1/v02/register/register/retrieveDataRegistration",
+        "secure": false
+    },
+    "/API_STAGE_1/v02/register/register/retrieveRefAgenDataFromRefId": {
+        "target": "http://dev.asuransiku.id/API_STAGE_1/v02/register/register/retrieveRefAgenDataFromRefId",
+        "secure": false
+    },
+    "/API_STAGE_1/v02/register/register": {
+        "target": "http://dev.asuransiku.id/API_STAGE_1/v02/register/register",
+        "secure": false
+    },
+    "/API_STAGE_1/v01/general/city/listAllCityByProvince": {
+        "target": "http://dev.asuransiku.id/API_STAGE_1/v01/general/city/listAllCityByProvince",
+        "secure": false
+    },
+    "/API_STAGE_1/v01/general/city/listAllCity": {
+        "target": "http://dev.asuransiku.id/API_STAGE_1/v01/general/city/listAllCity",
+        "secure": false
+    },
+    "/API_STAGE_1/v01/general/city/listZipCodeByCity": {
+        "target": "http://dev.asuransiku.id/API_STAGE_1/v01/general/city/listZipCodeByCity",
+        "secure": false
+    },
+    "/API_STAGE_1/v01/general/country": {
+        "target": "http://dev.asuransiku.id/API_STAGE_1/v01/general/country",
+        "secure": false
+    },
+    "/API_STAGE_1/v01/general/job": {
+        "target": "http://dev.asuransiku.id/API_STAGE_1/v01/general/job",
+        "secure": false
+    },
+    "/API_STAGE_1/v01/general/beneficiary": {
+        "target": "http://dev.asuransiku.id/API_STAGE_1/v01/general/beneficiary",
+        "secure": false
+    },
+    "/API_STAGE_1/v01/general/account/listBank": {
+        "target": "http://dev.asuransiku.id/API_STAGE_1/v01/general/account/listBank",
+        "secure": false
+    },
+    "/API_STAGE_1/v01/general/cart": {
+        "target": "http://dev.asuransiku.id/API_STAGE_1/v01/general/cart",
+        "secure": false
+    },
+    "/API_STAGE_1/v01/general/cart/waitingForPayment": {
+        "target": "http://dev.asuransiku.id/API_STAGE_1/v01/general/cart/waitingForPayment",
+        "secure": false
+    },
+    "/API_STAGE_1/v01/general/cart/cartItemCounter": {
+        "target": "http://dev.asuransiku.id/API_STAGE_1/v01/general/cart/cartItemCounter",
+        "secure": false
+    },
+    "/API_STAGE_1/v02/general/short_link/generateSimulationData": {
+        "target": "http://dev.asuransiku.id/API_STAGE_1/v02/general/short_link/generateSimulationData",
+        "secure": false
+    },
+    "/API_STAGE_1/v02/general/short_link/downloadListBengkel": {
+        "target": "http://dev.asuransiku.id/API_STAGE_1/v02/general/short_link/downloadListBengkel",
+        "secure": false
+    },
+    "/API_STAGE_1/v01/general/other_product/productList": {
+        "target": "http://dev.asuransiku.id/API_STAGE_1/v01/general/other_product/productList",
+        "secure": false
+    },
+    "/API_STAGE_1/v01/general/register": {
+        "target": "http://dev.asuransiku.id/API_STAGE_1/v01/general/register",
+        "secure": false
+    },
+    "/API_STAGE_1/v01/general/artikel/getAllMedia": {
+        "target": "http://dev.asuransiku.id/API_STAGE_1/v01/general/artikel/getAllMedia",
+        "secure": false
+    },
+    "/API_STAGE_1/v01/mv/license/listLicense": {
+        "target": "http://dev.asuransiku.id/API_STAGE_1/v01/mv/license/listLicense",
+        "secure": false
+    },
+    "/API_STAGE_1/v01/mv/model_type/listModelTypeByMerk": {
+        "target": "http://dev.asuransiku.id/API_STAGE_1/v01/mv/model_type/listModelTypeByMerk",
+        "secure": false
+    },
+    "/API_STAGE_1/v01/mv/model_type/priceByModelNumber": {
+        "target": "http://dev.asuransiku.id/API_STAGE_1/v01/mv/model_type/priceByModelNumber",
+        "secure": false
+    },
+    "/API_STAGE_1/v01/mv/coverage/listMainRisk": {
+        "target": "http://dev.asuransiku.id/API_STAGE_1/v01/mv/coverage/listMainRisk",
+        "secure": false
+    },
+    "/API_STAGE_1/v01/mv/coverage/listAdditionalRisk": {
+        "target": "http://dev.asuransiku.id/API_STAGE_1/v01/mv/coverage/listAdditionalRisk",
+        "secure": false
+    },
+    "/API_STAGE_1/v01/mv/coverage/listWorkshop": {
+        "target": "http://dev.asuransiku.id/API_STAGE_1/v01/mv/coverage/listWorkshop",
+        "secure": false
+    },
+    "/API_STAGE_1/v01/mv/merk/listMerkByWorkshop": {
+        "target": "http://dev.asuransiku.id/API_STAGE_1/v01/mv/merk/listMerkByWorkshop",
+        "secure": false
+    },
+    "/API_STAGE_1/v01/mv/merk/listByVehicleType": {
+        "target": "http://dev.asuransiku.id/API_STAGE_1/v01/mv/merk/listByVehicleType",
+        "secure": false
+    },
+    "/API_STAGE_1/v01/property/occupation/listStorey": {
+        "target": "http://dev.asuransiku.id/API_STAGE_1/v01/property/occupation/listStorey",
+        "secure": false
+    },
+    "/API_STAGE_1/v01/property/occupation/listClassConstruction": {
+        "target": "http://dev.asuransiku.id/API_STAGE_1/v01/property/occupation/listClassConstruction",
+        "secure": false
+    },
+    "/API_STAGE_1/v01/property/occupation/list": {
+        "target": "http://dev.asuransiku.id/API_STAGE_1/v01/property/occupation/list",
+        "secure": false
+    },
+    "/API_STAGE_1/v01/property/insurance_type/list": {
+        "target": "http://dev.asuransiku.id/API_STAGE_1/v01/property/insurance_type/list",
+        "secure": false
+    },
+    "/API_STAGE_1/v01/property/zone/list": {
+        "target": "http://dev.asuransiku.id/API_STAGE_1/v01/property/zone/list",
+        "secure": false
+    }
+    ,
+    "/API_STAGE_1/v01/property/zone/zoneCategory": {
+        "target": "http://dev.asuransiku.id/API_STAGE_1/v01/property/zone/zoneCategory",
+        "secure": false
+    },
+    "/API_STAGE_1/v02/mv/coverage/list": {
+        "target": "http://dev.asuransiku.id/API_STAGE_1/v02/mv/coverage/list",
+        "secure": false
+    },
+    "/API_STAGE_1/v02/property/coverage/list": {
+        "target": "http://dev.asuransiku.id/API_STAGE_1/v02/property/coverage/list",
+        "secure": false
+    },
+    "/API_STAGE_1/v02/property/buy/uploadDocumentNow": {
+        "target": "http://dev.asuransiku.id/API_STAGE_1/v02/property/buy/uploadDocumentNow",
+        "secure": false
+    },
+    "/API_STAGE_1/v02/property/buy/dataTransaction": {
+        "target": "http://dev.asuransiku.id/API_STAGE_1/v02/property/buy/dataTransaction",
+        "secure": false
+    },
+    "/API_STAGE_1/v02/property/buy/changeTransactionData": {
+        "target": "http://dev.asuransiku.id/API_STAGE_1/v02/property/buy/changeTransactionData",
+        "secure": false
+    },
+    "/API_STAGE_1/v02/property/buy": {
+        "target": "http://dev.asuransiku.id/API_STAGE_1/v02/property/buy",
+        "secure": false
+    },
+    "/API_STAGE_1/v02/mv/buy/dataTransaction": {
+        "target": "http://dev.asuransiku.id/API_STAGE_1/v02/mv/buy/dataTransaction",
+        "secure": false
+    },
+    "/API_STAGE_1/v02/mv/buy/changeTransactionData": {
+        "target": "http://dev.asuransiku.id/API_STAGE_1/v02/mv/buy/changeTransactionData",
+        "secure": false
+    },
+    "/API_STAGE_1/v02/mv/buy/uploadDocumentNow": {
+        "target": "http://dev.asuransiku.id/API_STAGE_1/v02/mv/buy/uploadDocumentNow",
+        "secure": false
+    },
+    "/API_STAGE_1/v02/mv/buy": {
+        "target": "http://dev.asuransiku.id/API_STAGE_1/v02/mv/buy",
+        "secure": false
+    },
+    "/API_STAGE_1/v01/payment/payment_method/getBankFee": {
+        "target": "http://dev.asuransiku.id/API_STAGE_1/v01/payment/payment_method/getBankFee",
+        "secure": false
+    },
+    "/API_STAGE_1/v01/payment/payment_method/usePromo": {
+        "target": "http://dev.asuransiku.id/API_STAGE_1/v01/payment/payment_method/usePromo",
+        "secure": false
+    },
+    "/API_STAGE_1/v01/payment/payment_method/resetPromo": {
+        "target": "http://dev.asuransiku.id/API_STAGE_1/v01/payment/payment_method/resetPromo",
+        "secure": false
+    },
+    "/API_STAGE_1/v01/payment/payment_method/getDataPayment": {
+        "target": "http://dev.asuransiku.id/API_STAGE_1/v01/payment/payment_method/getDataPayment",
+        "secure": false
+    },
+    "/API_STAGE_1/v01/payment/payment_method/payLater": {
+        "target": "http://dev.asuransiku.id/API_STAGE_1/v01/payment/payment_method/payLater",
+        "secure": false
+    },
+    "/API_STAGE_1/v01/payment/payment_method/retrieveBuyDataResult": {
+        "target": "http://dev.asuransiku.id/API_STAGE_1/v01/payment/payment_method/retrieveBuyDataResult",
+        "secure": false
+    },
+    "/API_STAGE_1/v01/payment/payment_confirmation/confirmData": {
+        "target": "http://dev.asuransiku.id/API_STAGE_1/v01/payment/payment_confirmation/confirmData",
+        "secure": false
+    },
+    "/API_STAGE_1/v01/payment/payment_confirmation": {
+        "target": "http://dev.asuransiku.id/API_STAGE_1/v01/payment/payment_confirmation",
+        "secure": false
+    },
+    "/API_STAGE_1/v01/payment/payment_method": {
+        "target": "http://dev.asuransiku.id/API_STAGE_1/v01/payment/payment_method",
+        "secure": false
+    },
+    "/API_STAGE_1/v01/payment/pay_now/checkPaymentStatus": {
+        "target": "http://dev.asuransiku.id/API_STAGE_1/v01/payment/pay_now/checkPaymentStatus",
+        "secure": false
+    },
+    "/API_STAGE_1/v01/payment/pay_now": {
+        "target": "http://dev.asuransiku.id/API_STAGE_1/v01/payment/pay_now",
+        "secure": false
+    }
+}
