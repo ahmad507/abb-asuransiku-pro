@@ -12,7 +12,7 @@ export const USER_DETAIL = "user-detail";
   providedIn: 'root'
 })
 export class AuthenticationService {
-  isAuthenticated : BehaviorSubject<boolean> = new BehaviorSubject<boolean>(true);
+  isAuthenticated : BehaviorSubject<boolean> = new BehaviorSubject<any>(null);
   headers = new HttpHeaders({'asri-api-key':'o480ks8g0oo84sw8kg0ogo4c8occwkc88gg0c84w'});
   user_detail = "";
   constructor( private http : HttpClient ) {
@@ -34,10 +34,10 @@ export class AuthenticationService {
   public doLogin(params:any)
   {
     let formData: FormData = new FormData();
-    formData.append("uName",params.username);
+    formData.append("uName",params.email);
     formData.append("uPass",params.password);
     return this.http.post("http://localhost/API_STAGE_1/v02/login/login", formData, {headers: this.headers}).pipe(
-      map((data: any) => data.r_data),
+      map((data: any) => data.r_data.REGISTRATION_CODE),
       switchMap(user_detail => {
         console.log(user_detail);
         return from(Preferences.set({key: USER_DETAIL, value: JSON.stringify(user_detail)})
@@ -47,6 +47,13 @@ export class AuthenticationService {
         this.isAuthenticated.next(true)
       })
     );
+  }
+
+  public doLogout() : Promise<void>
+  {
+    this.isAuthenticated.next(false);
+    return Preferences.remove({key: USER_DETAIL});
+
   }
 
 

@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { CanLoad, Router } from '@angular/router';
 
 export const INTRO_KEY = 'intro-seen';
-import { Preferences} from "@capacitor/preferences";
+import { Preferences } from "@capacitor/preferences";
 
 @Injectable({
   providedIn: 'root'
@@ -13,7 +13,7 @@ export class IntroGuard implements CanLoad {
 
   async canLoad(): Promise<boolean> {
     const hasSeenIntro = await Preferences.get({key: INTRO_KEY});
-    console.log(hasSeenIntro);
+    // console.log(hasSeenIntro);
     if (hasSeenIntro && (hasSeenIntro.value === 'true'))
     {
       return true;

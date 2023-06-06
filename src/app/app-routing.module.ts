@@ -5,19 +5,6 @@ import {AutologinGuard} from "./guards/autologin/autologin.guard";
 import {AuthenticationGuard} from "./guards/auth/authentication.guard";
 
 const routes: Routes = [
-  //---------------------------------------------------------------------------------------------------
-  /*
-  * Tidak Dipakai
-  * */
-  /*{
-    path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
-  },
-  {
-    path: 'message/:id',
-    loadChildren: () => import('./view-message/view-message.module').then( m => m.ViewMessagePageModule)
-  },*/
-  //---------------------------------------------------------------------------------------------------
   {
     path: '',
     redirectTo: 'login',
@@ -38,10 +25,11 @@ const routes: Routes = [
     canLoad: [AuthenticationGuard]
   },
   {
-    path: 'dashboard',
-    loadChildren: () => import('./pages/dashboard/dashboard.module').then( m => m.DashboardPageModule),
+    path: 'base',
+    loadChildren: () => import('./pages/base/base.module').then( m => m.BasePageModule),
     canLoad: [AuthenticationGuard]
   },
+
 
 ];
 
