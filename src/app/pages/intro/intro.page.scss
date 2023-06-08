@@ -1,3 +1,19 @@
+.image-container img{
+  border-radius: 16px;
+  width: auto;
+  height: 300px;
+  //background-image: url('https://www.asuransiku.id/asuransiku-id-pro/agen.ea1012020b4c07e8.jpg');
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+
+.bottom-round{
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+
+
 .swiper-area {
   left: 10px;
   transform: translateX(-10px -10px);
@@ -10,9 +26,6 @@ swiper-container{
   width: 100%;
   height: 100%;
   top: calc(100% - 85%);
-  border-radius: 8px;
-  background-color: rgba(253, 251, 255, 0.05);
-  box-shadow: -1px 2px 10px 1px rgba(23, 23, 23, 0.31);
 }
 
 swiper-slide {

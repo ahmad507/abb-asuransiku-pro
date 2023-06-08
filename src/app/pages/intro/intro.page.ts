@@ -9,6 +9,7 @@ import {INTRO_KEY} from "../../guards/intro/intro.guard";
   styleUrls: ['./intro.page.scss'],
 })
 export class IntroPage implements OnInit {
+  private scrollDepthTriggered = false;
   constructor(
     private router : Router
   ) { }
@@ -21,4 +22,23 @@ export class IntroPage implements OnInit {
     await this.router.navigateByUrl('/login', {replaceUrl: true});
   }
 
+  public async onScrollPage($event: any) {
+    const scrollElement = await $event.target.getScrollElement();
+    console.log({scrollElement});
+    const scrollHeight = scrollElement.scrollHeight - scrollElement.clientHeight;
+    console.log({scrollHeight});
+    const currentScrollDepth = scrollElement.scrollTop;
+    console.log({currentScrollDepth});
+    const targetPercent = 80;
+
+    let triggerDepth = ((scrollHeight / 100) * targetPercent);
+    console.log({triggerDepth});
+
+    if(currentScrollDepth > triggerDepth) {
+      console.log(`Scrolled to ${targetPercent}%`);
+      // this ensures that the event only triggers once
+      this.scrollDepthTriggered = true;
+      // do your analytics tracking here
+    }
+  }
 }

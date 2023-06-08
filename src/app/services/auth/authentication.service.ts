@@ -2,12 +2,8 @@ import { Injectable } from '@angular/core';
 import { Preferences } from "@capacitor/preferences";
 import {HttpClient, HttpHeaders} from "@angular/common/http";
 import {map, switchMap, tap} from "rxjs/operators";
-import {BehaviorSubject, from, Observable} from "rxjs";
-
-
-
+import {BehaviorSubject, from} from "rxjs";
 export const USER_DETAIL = "user-detail";
-
 @Injectable({
   providedIn: 'root'
 })
@@ -53,7 +49,6 @@ export class AuthenticationService {
   {
     this.isAuthenticated.next(false);
     return Preferences.remove({key: USER_DETAIL});
-
   }
 
 

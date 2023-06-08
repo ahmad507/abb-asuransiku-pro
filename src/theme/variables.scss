@@ -3,6 +3,11 @@
 
 /** Ionic CSS Variables **/
 :root {
+  --ion-safe-area-top: 40px;
+  --ion-safe-area-bottom: 40px;
+  --ion-safe-area-right: 8px;
+  --ion-safe-area-left: 8px;
+
   /** primary **/
   --ion-color-primary: #3880FF;
   --ion-color-primary-rgb: 56, 128, 255;

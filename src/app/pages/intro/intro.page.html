@@ -1,45 +1,99 @@
-<!--<ion-header [translucent]="true">-->
-<!--  <ion-toolbar>-->
-<!--    <ion-title>intro</ion-title>-->
-<!--  </ion-toolbar>-->
-<!--</ion-header>-->
+<ion-content
+  [scrollEvents]="true" (ionScroll)="onScrollPage($event)">
+  <div class="container-fluid bg-white  bottom-round">
+    <div class="p-2 bg-white font-weight-bold">
+      <h2><strong>ASURANSIKU.id PRO</strong></h2>
+    </div>
+    <div class="row">
+      <div class="col-md-4 m-md-auto mx-1">
+        <div class="p-md-2 mb-md-3 mb-1">
 
-<ion-content [fullscreen]="true">
-<!--  <ion-header collapse="condense">-->
-<!--    <ion-toolbar>-->
-<!--      <ion-title size="large">intro</ion-title>-->
-<!--    </ion-toolbar>-->
-<!--  </ion-header>-->
+          <swiper-container class="mb-3">
+            <swiper-slide class="">
+              <div class="row d-flex flex-wrap p-4">
+                <div class="col-12  my-1 image-container">
+                  <img src="../../../assets/images/undraw_articles_wbpb.svg" alt="a.png" >
+                </div>
+                <div class="col-12  my-1 text-left font-weight-bold">Polis Langsung Jadi</div>
+                <div class="col-12  my-1 text-left">
+                  <p>ASURANSIKU.id memberikan pelayanan penerbitan polis secepat yang anda butuhkan</p>
+                </div>
+              </div>
+            </swiper-slide>
 
-  <div class="swiper-area">
-    <swiper-container>
-      <swiper-slide>
-        <img src="../../../assets/images/img_polis.png" alt="a.png" >
-        <h3>Polis Langsung Jadi</h3>
-        <p>Polis pilihanmu akan segera diterbitkan setelah pembayaran</p>
-      </swiper-slide>
+            <swiper-slide class="">
+              <div class="row d-flex flex-wrap p-4">
+                <div class="col-12  my-1 image-container">
+                  <img src="../../../assets/images/premi.svg" alt="a.png" >
+                </div>
+                <div class="col-12  my-1 text-left font-weight-bold">Premi Kompetitif</div>
+                <div class="col-12  my-1 text-left">
+                  <p>ASURANSIKU.id memberikan premi yang kompetitif sesuai dengan kebutuhan anda</p>
+                </div>
+              </div>
+            </swiper-slide>
 
-      <swiper-slide>
-        <img src="../../../assets/images/img_premi.png" alt="a.png" >
-        <h3>Pilihan Premi Terbaik</h3>
-        <p>Kami menawarkan berbagai macam penawaran premi sesuai kebutuhanmu</p>
-      </swiper-slide>
+            <swiper-slide class="">
+              <div class="row d-flex flex-wrap p-4">
+                <div class="col-12  my-1 image-container">
+                  <img src="../../../assets/images/towing.svg" alt="a.png" >
+                </div>
+                <div class="col-12  my-1 text-left font-weight-bold">Gratis Derek</div>
+                <div class="col-12  my-1 text-left">
+                  <p>ASURANSIKU.id memberikan layanan derek untuk asuransi kendaraan anda</p>
+                </div>
+              </div>
+            </swiper-slide>
 
-      <swiper-slide>
-        <img src="../../../assets/images/img_towing.png" alt="a.png" style="width: 80%; margin-top: 62px">
-        <h3>Derek Gratis</h3>
-        <p>Dapatkan layanan derek gratis untuk asuransi kendaraanmu</p>
-      </swiper-slide>
+            <swiper-slide class="">
+              <div class="row d-flex flex-wrap p-4">
+                <div class="col-12  my-1 image-container">
+                  <img src="../../../assets/images/claim.svg" alt="a.png" >
+                </div>
+                <div class="col-12  my-1 text-left font-weight-bold">Mudahnya Klaim</div>
+                <div class="col-12  my-1 text-left">
+                  <p>Klaim mudah dan cepat hanya dalam genggaman anda</p>
+                </div>
+                <div class="col-12  my-1">
+                  <ion-button (click)="start()">Mulai Berasuransi</ion-button>
+                </div>
+              </div>
+            </swiper-slide>
 
-      <swiper-slide>
-        <img src="../../../assets/images/img_claim.png" alt="a.png" >
-        <h3>Klaim Cepat</h3>
-        <p>Klaim yang mudah dan cepat diproses oleh kami</p>
-        <div style="margin-top: 15px;">
-          <ion-button (click)="start()">Mulai Berasuransi</ion-button>
+          </swiper-container>
         </div>
-      </swiper-slide>
-    </swiper-container>
+      </div>
+    </div>
   </div>
 
+  <!--  <div class="swiper-area">-->
+  <!--    <swiper-container>-->
+  <!--      <swiper-slide>-->
+  <!--        <img src="../../../assets/images/img_polis.png" alt="a.png" >-->
+  <!--        <h3>Polis Langsung Jadi</h3>-->
+  <!--        <p>Polis pilihanmu akan segera diterbitkan setelah pembayaran</p>-->
+  <!--      </swiper-slide>-->
+
+  <!--      <swiper-slide>-->
+  <!--        <img src="../../../assets/images/img_premi.png" alt="a.png" >-->
+  <!--        <h3>Pilihan Premi Terbaik</h3>-->
+  <!--        <p>Kami menawarkan berbagai macam penawaran premi sesuai kebutuhanmu</p>-->
+  <!--      </swiper-slide>-->
+
+  <!--      <swiper-slide>-->
+  <!--        <img src="../../../assets/images/img_towing.png" alt="a.png" style="width: 80%; margin-top: 62px">-->
+  <!--        <h3>Derek Gratis</h3>-->
+  <!--        <p>Dapatkan layanan derek gratis untuk asuransi kendaraanmu</p>-->
+  <!--      </swiper-slide>-->
+
+  <!--      <swiper-slide>-->
+  <!--        <img src="../../../assets/images/img_claim.png" alt="a.png" >-->
+  <!--        <h3>Klaim Cepat</h3>-->
+  <!--        <p>Klaim yang mudah dan cepat diproses oleh kami</p>-->
+  <!--        <div style="margin-top: 15px;">-->
+  <!--          <ion-button (click)="start()">Mulai Berasuransi</ion-button>-->
+  <!--        </div>-->
+  <!--      </swiper-slide>-->
+  <!--    </swiper-container>-->
+  <!--  </div>-->
 </ion-content>

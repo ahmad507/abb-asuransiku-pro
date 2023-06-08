@@ -29,8 +29,6 @@ const routes: Routes = [
     loadChildren: () => import('./pages/base/base.module').then( m => m.BasePageModule),
     canLoad: [AuthenticationGuard]
   },
-
-
 ];
 
 @NgModule({
