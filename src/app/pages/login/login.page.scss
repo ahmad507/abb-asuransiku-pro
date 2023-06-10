@@ -1,6 +1,24 @@
 ion-content{
-  --padding-top: 40%;
-  --padding-start: 10%;
-  --padding-end: 10%;
-  --background: url('https://www.asuransiku.id/asuransiku-id-pro/agen.ea1012020b4c07e8.jpg') 0 0/100% 100% no-repeat;
+  --padding-start: 2%;
+  --padding-end: 2%;
+}
+
+.login-banner{
+  width: 80%;
+  position: absolute;
+  top: calc(100% - 55%);
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+ion-item{
+  --background: rgba(0, 0, 255, 0.07);
+  border-radius: 8px;
+  margin-top: 8px;
+}
+
+ion-modal {
+  --height: 97%;
+  --box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 }

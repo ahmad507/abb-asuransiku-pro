@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import { Preferences } from "@capacitor/preferences";
 import { Router } from "@angular/router";
 import {INTRO_KEY} from "../../guards/intro/intro.guard";
+import {StatusBar, Style} from "@capacitor/status-bar";
 
 @Component({
   selector: 'app-intro',
@@ -10,12 +11,20 @@ import {INTRO_KEY} from "../../guards/intro/intro.guard";
 })
 export class IntroPage implements OnInit {
   private scrollDepthTriggered = false;
+  header_name:string = 'ASURANSIKU.id PRO';
   constructor(
     private router : Router
   ) { }
 
   ngOnInit() {
   }
+  ionViewWillEnter()
+  {
+    StatusBar.setStyle({style: Style.Light});
+    StatusBar.setOverlaysWebView({ overlay: true });
+  }
+
+
   async start()
   {
     await Preferences.set({key: INTRO_KEY, value: 'true'});

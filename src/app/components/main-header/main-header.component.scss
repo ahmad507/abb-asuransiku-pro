@@ -1,0 +1,26 @@
+.header-container {
+  margin-top: 56px;
+  margin-bottom: 20px;
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #0400ff;
+  border-radius: 8px 8px 0 0 ;
+  height: 56px;
+}
+@font-face {
+  font-family: myFirstFont;
+  src: url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+}
+
+.header-text {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  margin-top: 8px;
+  margin-bottom: auto;
+}
+
+
