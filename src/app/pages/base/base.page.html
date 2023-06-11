@@ -1,27 +1,68 @@
-<ion-tabs >
-  <ion-tab-bar slot="bottom">
-    <ion-tab-button tab="dashboard">
-      <ion-icon name="home"></ion-icon>
-      Dashboard
-    </ion-tab-button>
-    <ion-tab-button tab="claim">
-      <ion-icon name="document"></ion-icon>
-      Claim
-    </ion-tab-button>
-    <ion-tab-button tab="cart">
-      <ion-icon name="cart"></ion-icon>
+<ion-tabs   (ionTabsDidChange)="selectedTabs($event)">
+  <ion-tab-bar slot="bottom" class="ion-padding-top ion-padding-bottom">
+    <div class="tabs-btn">
+      <app-bottombar
+        route_tabs="dashboard"
+        route_name="Dashboard"
+        [inactive_route]="tab_name === 'dashboard' ? dashboard_a : dashboard">
+      </app-bottombar>
+    </div>
 
-      Cart
-    </ion-tab-button>
-    <ion-tab-button tab="policy">
-      <ion-icon name="mail-unread"></ion-icon>
-      Policy
-    </ion-tab-button>
+    <div class="tabs-btn">
+      <app-bottombar
+        route_tabs="polis"
+        route_name="Polis"
+        [inactive_route]="tab_name === 'polis'  ? policy_a : policy">
+      </app-bottombar>
+    </div>
 
-    <ion-tab-button tab="profile">
-      <ion-icon name="person"></ion-icon>
-      Profile
-    </ion-tab-button>
+    <div class="tabs-btn">
+      <app-bottombar
+        route_tabs="cart"
+        route_name="Cart"
+        [inactive_route]="tab_name === 'cart'  ? cart_a : cart">
+      </app-bottombar>
+    </div>
+
+    <div class="tabs-btn">
+      <app-bottombar
+        route_tabs="claim"
+        route_name="Claim"
+        [inactive_route]="tab_name === 'claim'  ? claim_a : claim">
+      </app-bottombar>
+    </div>
+
+    <div class="tabs-btn">
+      <app-bottombar
+        route_tabs="profile"
+        route_name="profile"
+        [inactive_route]="tab_name === 'profile'  ? profile_a : profile">
+      </app-bottombar>
+    </div>
+
+    <!--    <ion-tab-button tab="dashboard">-->
+    <!--      <img src="assets/core/beranda.svg">-->
+    <!--      Dashboard-->
+    <!--    </ion-tab-button>-->
+
+    <!--    <ion-tab-button tab="claim">-->
+    <!--      <ion-icon name="document"></ion-icon>-->
+    <!--      Claim-->
+    <!--    </ion-tab-button>-->
+    <!--    <ion-tab-button tab="cart">-->
+    <!--      <ion-icon name="cart"></ion-icon>-->
+
+    <!--      Cart-->
+    <!--    </ion-tab-button>-->
+    <!--    <ion-tab-button tab="policy">-->
+    <!--      <ion-icon name="mail-unread"></ion-icon>-->
+    <!--      Policy-->
+    <!--    </ion-tab-button>-->
+
+    <!--    <ion-tab-button tab="profile">-->
+    <!--      <ion-icon name="person"></ion-icon>-->
+    <!--      Profile-->
+    <!--    </ion-tab-button>-->
 
   </ion-tab-bar>
 </ion-tabs>

@@ -7,6 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { BasePageRoutingModule } from './base-routing.module';
 
 import { BasePage } from './base.page';
+import {BottombarComponent} from "../../components/navigation/bottombar/bottombar.component";
 
 @NgModule({
   imports: [
@@ -15,6 +16,6 @@ import { BasePage } from './base.page';
     IonicModule,
     BasePageRoutingModule
   ],
-  declarations: [BasePage]
+  declarations: [BasePage, BottombarComponent]
 })
 export class BasePageModule {}

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { addIcons } from 'ionicons';
 
 @Component({
   selector: 'app-topbar',
@@ -7,8 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TopbarComponent  implements OnInit {
 
+
+
   constructor() { }
 
-  ngOnInit() {}
+ionViewWillEnter()
+{
+  addIcons({
+    'user_button' : "assets/core/user_button.svg",
+    'polis_button' : "assets/core/polis_button.svg"
+  })
+}
+
+  ngOnInit() {
+  }
 
 }

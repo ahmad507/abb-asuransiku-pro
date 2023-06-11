@@ -17,7 +17,7 @@ const routes: Routes = [
         loadChildren: () => import('../../pages/cart/cart.module').then( m => m.CartPageModule)
       },
       {
-        path: 'policy',
+        path: 'polis',
         loadChildren: () => import('../../pages/policy/policy.module').then( m => m.PolicyPageModule)
       },
       {

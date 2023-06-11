@@ -4,6 +4,7 @@ import {AuthenticationService} from "../../services/auth/authentication.service"
 import {Router} from "@angular/router";
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 import { IonModal } from '@ionic/angular';
+import {StatusbarSetup} from "../../utils/core/statusbarSetup";
 
 @Component({
   selector: 'app-login',
@@ -24,6 +25,7 @@ export class LoginPage implements OnInit {
 
   ngOnInit()
   {
+    StatusbarSetup.LightStatusBar();
     this.credentials = this.fb.group({
       email: ['', [Validators.required, Validators.email]],
       password: ['', [Validators.required, Validators.minLength(4)]],
@@ -65,7 +67,12 @@ export class LoginPage implements OnInit {
   async registration() {
     const loading = await this.loadingController.create();
     await loading.present();
-    this.router.navigateByUrl('/register', {replaceUrl:true})
+    await this.router.navigateByUrl('/register', {replaceUrl: true})
     await loading.dismiss();
+  }
+
+  ionViewDidEnter()
+  {
+    StatusbarSetup.LightStatusBar()
   }
 }
