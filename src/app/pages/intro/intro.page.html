@@ -1,9 +1,8 @@
+
 <ion-content
   [scrollEvents]="true" (ionScroll)="onScrollPage($event)">
+  <app-main-header [header_name]="header_name"></app-main-header>
   <div class="container-fluid bg-white  bottom-round">
-    <div class="p-2 bg-white font-weight-bold">
-      <h2><strong>ASURANSIKU.id PRO</strong></h2>
-    </div>
     <div class="row">
       <div class="col-md-4 m-md-auto mx-1">
         <div class="p-md-2 mb-md-3 mb-1">
@@ -55,7 +54,7 @@
                   <p>Klaim mudah dan cepat hanya dalam genggaman anda</p>
                 </div>
                 <div class="col-12  my-1">
-                  <ion-button (click)="start()">Mulai Berasuransi</ion-button>
+                  <div class="col-12 btn btn-primary btn-lg btn-block my-1" (click)="start()">Mulai Berasuransi</div>
                 </div>
               </div>
             </swiper-slide>

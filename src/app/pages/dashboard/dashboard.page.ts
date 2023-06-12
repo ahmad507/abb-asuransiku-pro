@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {StatusbarSetup} from "../../utils/core/statusbarSetup";
 
 @Component({
   selector: 'app-dashboard',
@@ -10,6 +11,11 @@ export class DashboardPage implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  }
+
+  ionViewWillEnter()
+  {
+    StatusbarSetup.LightStatusBar()
   }
 
 }
