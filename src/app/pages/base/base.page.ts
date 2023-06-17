@@ -21,6 +21,8 @@ export class BasePage implements OnInit {
   public  claim_a = "assets/core/claim_a.svg";
   public  profile_a = "assets/core/account_a.svg";
 
+  public cart_notification = 12;
+
 
   constructor() { }
 

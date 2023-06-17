@@ -17,6 +17,11 @@
   align-items: center;
 }
 
+.notif-container{
+  position: absolute;
+  z-index: 999;
+}
+
 .search-bar
 {
   width: calc(100% - 25%);
