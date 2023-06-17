@@ -8,13 +8,14 @@ import { DashboardPageRoutingModule } from './dashboard-routing.module';
 
 import { DashboardPage } from './dashboard.page';
 import {TopbarComponent} from "../../components/navigation/topbar/topbar.component";
+import {BasePageModule} from "../base/base.module";
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    DashboardPageRoutingModule
+    DashboardPageRoutingModule,
   ],
   declarations: [DashboardPage, TopbarComponent]
 })

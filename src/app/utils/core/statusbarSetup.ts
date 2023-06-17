@@ -1,4 +1,5 @@
 import {StatusBar, Style} from "@capacitor/status-bar";
+import { Platform } from "@ionic/angular";
 
 
 export class StatusbarSetup {

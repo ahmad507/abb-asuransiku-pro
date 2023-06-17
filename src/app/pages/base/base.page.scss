@@ -4,3 +4,21 @@ ion-tab-bar {
   border-radius: 16px 16px 0 0;
   --background: rgba(170, 207, 255, 0.05);
 }
+
+.cart-notification {
+  background-color: red;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  position: absolute;
+  z-index: 999;
+  margin-top: -10px;
+  margin-left: 40px;
+}
+
+.quotation {
+  color: white;
+  margin: 2px;
+  font-size: 12px;
+  font-weight: bold;
+}

@@ -13,9 +13,9 @@ export class DashboardPage implements OnInit {
   ngOnInit() {
   }
 
-  ionViewWillEnter()
-  {
-    StatusbarSetup.LightStatusBar()
-  }
+  // ionViewWillEnter()
+  // {
+  //   StatusbarSetup.LightStatusBar();
+  // }
 
 }

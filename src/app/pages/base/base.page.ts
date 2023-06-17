@@ -21,6 +21,7 @@ export class BasePage implements OnInit {
   public  claim_a = "assets/core/claim_a.svg";
   public  profile_a = "assets/core/account_a.svg";
 
+
   constructor() { }
 
   ngOnInit() {
@@ -30,11 +31,6 @@ export class BasePage implements OnInit {
     this.activeTab = !this.activeTab;
     this.tab_name = $event.tab;
     console.log(this.tab_name)
-  }
-
-  ionViewDidEnter()
-  {
-
   }
 
 }

@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { addIcons } from 'ionicons';
 
 @Component({
   selector: 'app-topbar',
@@ -7,8 +6,6 @@ import { addIcons } from 'ionicons';
   styleUrls: ['./topbar.component.scss'],
 })
 export class TopbarComponent  implements OnInit {
-
-
 
   constructor() { }
 

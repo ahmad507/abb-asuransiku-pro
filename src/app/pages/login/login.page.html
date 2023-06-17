@@ -51,7 +51,7 @@
             </ion-input>
           </ion-item>
 
-          <div class="my-1 text-danger text-left small" *ngIf="(email?.dirty || email?.touched) && email?.errors">
+          <div class="mx-2 my-1 text-danger text-left small" *ngIf="(email?.dirty || email?.touched) && email?.errors">
             <span *ngIf="email?.errors">incorrect email format</span>
           </div>
 
@@ -61,7 +61,7 @@
             </app-u-pass>
           </ion-item>
 
-          <div class="my-1 text-danger text-left small" *ngIf="(password?.dirty || password?.touched) && password?.errors">
+          <div class="mx-2 my-1 text-danger text-left small" *ngIf="(password?.dirty || password?.touched) && password?.errors">
             <span *ngIf="password?.errors">password min. contain 6 character</span>
           </div>
 

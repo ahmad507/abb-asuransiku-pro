@@ -1,25 +1,33 @@
-.top-btn {
-  width: 44px;
-  height: 44px;
-  border-radius: 12px;
+.ripple-parent
+{
+  position: relative;
+  overflow: hidden;
 }
 
-.search-tap {
-  width: calc(100% - 33%);
+.top-bar-container
+{
+  padding: 8px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 16px;
+  align-items: center;
+}
+
+.search-bar
+{
+  width: calc(100% - 25%);
   height: 44px;
   border-radius: 12px;
   background-color: rgba(31, 70, 153, 0.25);
 }
 
-.top-wrapper {
-  margin-bottom: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  gap: 16px;
-}
-
-.ripple-parent {
-  position: relative;
-  overflow: hidden;
+.notification-bar
+{
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
 }

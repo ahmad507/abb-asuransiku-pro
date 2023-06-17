@@ -5,6 +5,7 @@ import {Router} from "@angular/router";
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 import { IonModal } from '@ionic/angular';
 import {StatusbarSetup} from "../../utils/core/statusbarSetup";
+import { Platform } from '@ionic/angular';
 
 @Component({
   selector: 'app-login',
@@ -20,12 +21,12 @@ export class LoginPage implements OnInit {
     private alertController : AlertController,
     private authService : AuthenticationService,
     private router : Router,
-    private fb: FormBuilder
+    private fb : FormBuilder,
+    private platform : Platform
   ) { }
 
   ngOnInit()
   {
-    StatusbarSetup.LightStatusBar();
     this.credentials = this.fb.group({
       email: ['', [Validators.required, Validators.email]],
       password: ['', [Validators.required, Validators.minLength(4)]],
@@ -73,6 +74,10 @@ export class LoginPage implements OnInit {
 
   ionViewDidEnter()
   {
-    StatusbarSetup.LightStatusBar()
+    const mobile = this.platform.is("mobile");
+    if (mobile)
+    {
+      // StatusbarSetup.LightStatusBar()
+    }
   }
 }
