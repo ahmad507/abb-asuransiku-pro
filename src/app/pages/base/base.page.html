@@ -17,6 +17,9 @@
     </div>
 
     <div class="tabs-btn">
+      <div class="ml-3">
+      <app-notif-bagde [notification_total]="cart_notification"></app-notif-bagde>
+      </div>
       <app-bottombar
         route_tabs="cart"
         route_name="Cart"
@@ -39,30 +42,6 @@
         [inactive_route]="tab_name === 'profile'  ? profile_a : profile">
       </app-bottombar>
     </div>
-
-    <!--    <ion-tab-button tab="dashboard">-->
-    <!--      <img src="assets/core/beranda.svg">-->
-    <!--      Dashboard-->
-    <!--    </ion-tab-button>-->
-
-    <!--    <ion-tab-button tab="claim">-->
-    <!--      <ion-icon name="document"></ion-icon>-->
-    <!--      Claim-->
-    <!--    </ion-tab-button>-->
-    <!--    <ion-tab-button tab="cart">-->
-    <!--      <ion-icon name="cart"></ion-icon>-->
-
-    <!--      Cart-->
-    <!--    </ion-tab-button>-->
-    <!--    <ion-tab-button tab="policy">-->
-    <!--      <ion-icon name="mail-unread"></ion-icon>-->
-    <!--      Policy-->
-    <!--    </ion-tab-button>-->
-
-    <!--    <ion-tab-button tab="profile">-->
-    <!--      <ion-icon name="person"></ion-icon>-->
-    <!--      Profile-->
-    <!--    </ion-tab-button>-->
 
   </ion-tab-bar>
 </ion-tabs>

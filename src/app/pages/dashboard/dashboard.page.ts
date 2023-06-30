@@ -7,7 +7,6 @@ import {StatusbarSetup} from "../../utils/core/statusbarSetup";
   styleUrls: ['./dashboard.page.scss'],
 })
 export class DashboardPage implements OnInit {
-
   constructor() { }
 
   ngOnInit() {
@@ -15,7 +14,7 @@ export class DashboardPage implements OnInit {
 
   ionViewWillEnter()
   {
-    StatusbarSetup.LightStatusBar()
+    StatusbarSetup.LightStatusBar();
   }
 
 }

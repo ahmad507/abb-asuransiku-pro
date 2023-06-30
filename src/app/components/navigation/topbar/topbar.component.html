@@ -1,14 +1,17 @@
-<div class="top-wrapper">
-  <div class="mx-2 search-tap text-center align-items-center ion-activatable ripple-parent">
-    <div class="d-flex flex-row p-1 mx-3 mt-2 mb-2">
+<div class="top-bar-container">
+  <div class="search-bar ion-activatable ripple-parent">
+    <ion-ripple-effect></ion-ripple-effect>
+    <div class="d-flex flex-row  mx-3 mt-2 mb-2 text-center align-items-center">
       <ion-icon slot="icon-only" name="search"></ion-icon>
       <div class="mx-2 font-weight-bold ">Temukan Asuransiku</div>
     </div>
-    <ion-ripple-effect></ion-ripple-effect>
   </div>
-  <div class="mx-2 top-btn ion-activatable ripple-parent">
+  <div class="notification-bar ion-activatable ripple-parent">
+    <div class="ml-1">
+    <app-notif-bagde [notification_total]="push_notification"></app-notif-bagde>
+    </div>
     <ion-ripple-effect></ion-ripple-effect>
-    <img src="../../../../assets/core/notif.svg" alt="user_button">
+    <img src="assets/core/notif.svg" alt="user_button">
   </div>
 </div>
 

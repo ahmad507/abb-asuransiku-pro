@@ -8,14 +8,18 @@ import { DashboardPageRoutingModule } from './dashboard-routing.module';
 
 import { DashboardPage } from './dashboard.page';
 import {TopbarComponent} from "../../components/navigation/topbar/topbar.component";
+import {NotifBagdeComponent} from "../../components/notif-bagde/notif-bagde.component";
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    DashboardPageRoutingModule
+    DashboardPageRoutingModule,
   ],
-  declarations: [DashboardPage, TopbarComponent]
+  exports: [
+    NotifBagdeComponent
+  ],
+  declarations: [DashboardPage, TopbarComponent, NotifBagdeComponent]
 })
 export class DashboardPageModule {}

@@ -8,13 +8,15 @@ import { BasePageRoutingModule } from './base-routing.module';
 
 import { BasePage } from './base.page';
 import {BottombarComponent} from "../../components/navigation/bottombar/bottombar.component";
+import {DashboardPageModule} from "../dashboard/dashboard.module";
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    BasePageRoutingModule
+    BasePageRoutingModule,
+    DashboardPageModule
   ],
   declarations: [BasePage, BottombarComponent]
 })
