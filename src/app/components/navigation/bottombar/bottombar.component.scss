@@ -1,0 +1,43 @@
+ion-tab-button.tab-selected {
+  .active {
+    visibility: visible;
+    position: absolute;
+    padding: 0;
+    z-index: 1;
+  }
+}
+
+ion-tab-button.tab-selected .inactive {
+  display: none;
+}
+
+ion-tab-bar{
+  background-color: white;
+  overflow-x: auto;
+  border:0px;
+}
+
+.active{
+  visibility: hidden;
+}
+
+
+
+.tabs-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background-color: #1f469f;
+  box-shadow: 0 3px 6px 0 rgba(31, 70, 153, 0.81);
+}
+
+.top-wrapper {
+  display: flex;
+}
+
+ion-tab-button:active {
+  .active{
+    visibility: visible;
+  }
+}
+

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, ContentChild, Input, OnInit} from '@angular/core';
+
 
 @Component({
   selector: 'app-topbar',
@@ -6,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./topbar.component.scss'],
 })
 export class TopbarComponent  implements OnInit {
-
+  @Input() push_notification:any = 18;
   constructor() { }
 
-  ngOnInit() {}
+
+  ngOnInit() {
+  }
 
 }

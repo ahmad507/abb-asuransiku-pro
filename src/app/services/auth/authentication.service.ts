@@ -32,7 +32,7 @@ export class AuthenticationService {
     let formData: FormData = new FormData();
     formData.append("uName",params.email);
     formData.append("uPass",params.password);
-    return this.http.post("http://localhost/API_STAGE_1/v02/login/login", formData, {headers: this.headers}).pipe(
+    return this.http.post("/API_STAGE_1/v02/login/login", formData, {headers: this.headers}).pipe(
       map((data: any) => data.r_data.REGISTRATION_CODE),
       switchMap(user_detail => {
         console.log(user_detail);

@@ -1,8 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
 import {AlertController, LoadingController} from "@ionic/angular";
 import {AuthenticationService} from "../../services/auth/authentication.service";
 import {Router} from "@angular/router";
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
+import { IonModal } from '@ionic/angular';
+import {StatusbarSetup} from "../../utils/core/statusbarSetup";
+import { Platform } from '@ionic/angular';
 
 @Component({
   selector: 'app-login',
@@ -11,21 +14,22 @@ import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 })
 export class LoginPage implements OnInit {
   credentials! : FormGroup;
+  @ViewChild(IonModal) modal: any;
 
   constructor(
-
     private loadingController : LoadingController,
     private alertController : AlertController,
     private authService : AuthenticationService,
     private router : Router,
-    private fb: FormBuilder
+    private fb : FormBuilder,
+    private platform : Platform
   ) { }
 
   ngOnInit()
   {
     this.credentials = this.fb.group({
-      email: ['it@abb-insurance.com', [Validators.required, Validators.email]],
-      password: ['it123', [Validators.required, Validators.minLength(4)]],
+      email: ['', [Validators.required, Validators.email]],
+      password: ['', [Validators.required, Validators.minLength(4)]],
     });
   }
 
@@ -43,6 +47,7 @@ export class LoginPage implements OnInit {
   {
     const loading = await this.loadingController.create();
     await loading.present();
+    await this.modal.dismiss();
     this.authService.doLogin(this.credentials.value).subscribe(
       async (res) => {
         await loading.dismiss();
@@ -58,5 +63,21 @@ export class LoginPage implements OnInit {
         await alert.present();
       }
     );
+  }
+
+  async registration() {
+    const loading = await this.loadingController.create();
+    await loading.present();
+    await this.router.navigateByUrl('/register', {replaceUrl: true})
+    await loading.dismiss();
+  }
+
+  ionViewDidEnter()
+  {
+    const mobile = this.platform.is("mobile");
+    if (mobile)
+    {
+      // StatusbarSetup.LightStatusBar()
+    }
   }
 }

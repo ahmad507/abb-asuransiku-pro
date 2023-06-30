@@ -8,6 +8,7 @@ import { IntroPageRoutingModule } from './intro-routing.module';
 
 import { IntroPage } from './intro.page';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import {MainHeaderComponent} from "../../components/main-header/main-header.component";
 
 
 @NgModule({
@@ -18,7 +19,7 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
     IonicModule,
     IntroPageRoutingModule,
   ],
-  declarations: [IntroPage],
+  declarations: [IntroPage, MainHeaderComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class IntroPageModule {}

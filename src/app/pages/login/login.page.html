@@ -1,23 +1,76 @@
+<!--<ion-content>-->
+<!--  <div class="alert alert-light shadow-sm font-weight-bold mx-2 my-2">ASURANSIKU.id PRO</div>-->
+<!--  <form (submit)="login()" [formGroup]="credentials">-->
+<!--    <ion-item class="my-1 rounded-lg font-weight-bold">-->
+<!--      <ion-input type="email" placeholder="Your Valid Email" formControlName="email"></ion-input>-->
+<!--    </ion-item>-->
+
+<!--    <div class="my-1 text-center bg-danger text-white" *ngIf="(email?.dirty || email?.touched) && email?.errors">-->
+<!--      <span *ngIf="email?.errors">Email is invalid</span>-->
+<!--    </div>-->
+
+<!--    <ion-item class="my-1 rounded-lg font-weight-bold">-->
+<!--      <ion-input type="password" placeholder="Your Valid Password" formControlName="password"></ion-input>-->
+<!--    </ion-item>-->
+
+<!--    <div class="my-1 text-center bg-danger text-white" *ngIf="(password?.dirty || password?.touched) && password?.errors">-->
+<!--      <span *ngIf="password?.errors">Password is invalid</span>-->
+<!--    </div>-->
+
+<!--    <ion-button type="submit" expand="block" style="margin-top: 1rem;" [disabled]="!credentials.valid">Login</ion-button>-->
+<!--  </form>-->
+<!--</ion-content>-->
+
 <ion-content>
-  <div class="alert alert-light shadow-sm font-weight-bold mx-2 my-2">ASURANSIKU.id PRO</div>
-  <form (submit)="login()" [formGroup]="credentials">
-    <ion-item class="my-1 rounded-lg font-weight-bold">
-      <ion-input type="email" placeholder="Your Valid Email" formControlName="email"></ion-input>
-    </ion-item>
-
-    <div class="my-1 text-center bg-danger text-white" *ngIf="(email?.dirty || email?.touched) && email?.errors">
-      <span *ngIf="email?.errors">Email is invalid</span>
+  <div class="login-banner">
+    <div class="my-2">
+      <img src="../../../assets/logo_asuransiku_pro.png" alt="" class="img-logo">
     </div>
-
-    <ion-item class="my-1 rounded-lg font-weight-bold">
-      <ion-input type="password" placeholder="Your Valid Password" formControlName="password"></ion-input>
-    </ion-item>
-
-    <div class="my-1 text-center bg-danger text-white" *ngIf="(password?.dirty || password?.touched) && password?.errors">
-      <span *ngIf="password?.errors">Password is invalid</span>
+    <div class="row d-flex flex-row justify-content-center my-4">
+      <div class="col-12 btn btn-primary btn-lg btn-block my-1" id="open-modal">Login</div>
+      <div class="my-2 d-flex justify-content-center align-items-center">
+        <ion-icon name="exit-outline"></ion-icon>
+        <div class="font-weight-bold nav-link" (click)="registration()">Registrasi Agen</div>
+      </div>
     </div>
+  </div>
+  <ion-modal
+    trigger="open-modal"
+    [initialBreakpoint]="0.92"
+    [breakpoints]="[0, 0.25, 0.5, 0.92]"
+    handleBehavior="cycle"
+  >
+    <ng-template>
+      <ion-content class="ion-padding">
+        <div class="my-2 mr-auto shadow-lg" style="height: 70px; width: 70px; border-radius: 16px; background-color: whitesmoke; overflow: hidden">
+          <img  src="../../../assets/images/ic_launcher.png" alt="banner">
+        </div>
+        <form (submit)="login()" [formGroup]="credentials">
+          <ion-item>
+            <ion-input [clearInput]="true" placeholder="Enter Your Email" formControlName="email">
+            </ion-input>
+          </ion-item>
 
-    <ion-button type="submit" expand="block" style="margin-top: 1rem;" [disabled]="!credentials.valid">Login</ion-button>
-  </form>
+          <div class="mx-2 my-1 text-danger text-left small" *ngIf="(email?.dirty || email?.touched) && email?.errors">
+            <span *ngIf="email?.errors">incorrect email format</span>
+          </div>
+
+          <ion-item>
+            <app-u-pass>
+              <ion-input  type="password" placeholder="Enter Your Password" formControlName="password"></ion-input>
+            </app-u-pass>
+          </ion-item>
+
+          <div class="mx-2 my-1 text-danger text-left small" *ngIf="(password?.dirty || password?.touched) && password?.errors">
+            <span *ngIf="password?.errors">password min. contain 6 character</span>
+          </div>
+
+          <button class="btn btn-primary btn-lg btn-block" type="submit" style="margin-top: 1rem;" [disabled]="!credentials.valid">Login</button>
+        </form>
+
+      </ion-content>
+
+    </ng-template>
+  </ion-modal>
 </ion-content>
 

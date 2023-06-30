@@ -29,6 +29,11 @@
                 "glob": "**/*.svg",
                 "input": "node_modules/ionicons/dist/ionicons/svg",
                 "output": "./svg"
+              },
+              {
+                "glob": "**/*.svg",
+                "input": "src/assets/core",
+                "output": "assets"
               }
             ],
             "styles": ["src/theme/variables.scss", "src/global.scss","node_modules/bootstrap/dist/css/bootstrap.min.css"],
@@ -78,7 +83,7 @@
             },
             "development": {
               "browserTarget": "app:build:development",
-              "proxyConfig": "src/proxy.conf.json"
+              "proxyConfig": "src/proxy.conf.json",
             },
             "ci": {
               "progress": false
